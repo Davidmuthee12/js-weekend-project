@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>📝 My To-Do List</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>📝 My To-Do List</h1>
+
+    <!-- Input Section -->
+    <div class="add-task">
+      <input type="text" id="taskInput" placeholder="Enter a new task..." />
+      <button id="addTaskBtn">Add</button>
+    </div>
+
+    <!-- Task List -->
+    <ul id="taskList">
+      <!-- Example static items -->
+      <li>
+        <input type="checkbox" />
+        <span>Buy groceries</span>
+        <button class="delete">✖</button>
+      </li>
+      <li class="completed">
+        <input type="checkbox" checked />
+        <span>Finish JS homework</span>
+        <button class="delete">✖</button>
+      </li>
+    </ul>
+
+    <!-- Controls -->
+    <div class="controls">
+      <span id="taskCount">2 tasks left</span>
+      <div class="filters">
+        <button id="filterAll" class="active">All</button>
+        <button id="filterActive">Active</button>
+        <button id="filterCompleted">Completed</button>
+      </div>
+      <button id="clearCompleted">Clear Completed</button>
+    </div>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>

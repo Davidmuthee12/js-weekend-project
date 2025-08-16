@@ -1,0 +1,149 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #f0f4f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #2563eb; /* blue */
+}
+
+/* Input section */
+.add-task {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.add-task input {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.add-task input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.add-task button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.add-task button:hover {
+  background: #1e40af;
+}
+
+/* Task list */
+#taskList {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+#taskList li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 0.8rem;
+  border-bottom: 1px solid #eee;
+}
+
+#taskList li:last-child {
+  border-bottom: none;
+}
+
+#taskList span {
+  flex: 1;
+  margin-left: 0.6rem;
+}
+
+#taskList li.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+#taskList input[type="checkbox"] {
+  transform: scale(1.2);
+}
+
+.delete {
+  background: transparent;
+  border: none;
+  color: #e11d48;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.delete:hover {
+  color: #b91c1c;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+}
+
+.filters button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.filters button.active,
+.filters button:hover {
+  background: #2563eb;
+  color: #fff;
+}
+
+#clearCompleted {
+  border: none;
+  background: #e11d48;
+  color: #fff;
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#clearCompleted:hover {
+  background: #b91c1c;
+}
