@@ -1,6 +1,6 @@
 # Weather App 🌤️
 
-A simple weather application that fetches and displays real-time weather data for any city using the **OpenWeatherMap API**.
+A simple weather application that fetches and displays real-time weather data for any city using the **WeatherAPI.com**.
 
 ---
 
